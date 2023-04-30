@@ -38,5 +38,7 @@ export default (req: Request, res: Response) => {
     paymentSchedule
   );
 
-  res.status(STATUS_CODES.SUCCESS).send({ mortgagePayment });
+  res
+    .status(STATUS_CODES.SUCCESS)
+    .json({ mortgagePayment: Number(mortgagePayment).toFixed(2) });
 };
