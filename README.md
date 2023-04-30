@@ -36,3 +36,4 @@ If you want to run tests then npm `run test`
 - Improve tech stack by adding eslint and husky
 - Add more unit tests
 - Add swagger documentation
+- Add another endpoint to calculate the insurance in isolation
