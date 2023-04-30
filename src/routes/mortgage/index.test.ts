@@ -52,7 +52,7 @@ describe("tests for /mortgage", () => {
 
     describe("check results", () => {
       it("should return monthly payment", async () => {
-        const expected = { mortgagePayment: "2053.08" };
+        const expected = { mortgagePayment: "2043.26" };
         const res1 = await request(app)
           .get("/mortgage/payment")
           .query({

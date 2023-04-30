@@ -14,10 +14,10 @@ describe("tests for utils", () => {
     ).toFixed(2)} when downpayment is 15% or more and less to 20%`, () => {
       const propertyPrice = 400000;
       expect(getInsuranceAmount(propertyPrice, 15)).toEqual(
-        propertyPrice * INSURANCE_PERCENTAGE.SMALL
+        propertyPrice * 0.85 * INSURANCE_PERCENTAGE.SMALL
       );
       expect(getInsuranceAmount(propertyPrice, 18)).toEqual(
-        propertyPrice * INSURANCE_PERCENTAGE.SMALL
+        propertyPrice * 0.82 * INSURANCE_PERCENTAGE.SMALL
       );
     });
 

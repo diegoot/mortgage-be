@@ -26,7 +26,7 @@ export const getInsuranceAmount = (
     insurancePercentage = INSURANCE_PERCENTAGE.NONE;
   }
 
-  return propertyPrice * insurancePercentage;
+  return propertyPrice * (1 - downPaymentPercentage) * insurancePercentage;
 };
 
 export const getMonthlyMortgagePayment = (
