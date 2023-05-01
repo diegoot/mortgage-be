@@ -33,11 +33,11 @@ export const getMonthlyMortgagePayment = (
   propertyPrice: number,
   insuranceAmount: number,
   downPayment: number,
-  anualInterestRate: number,
+  annualInterestRate: number,
   amortizationPeriod: number
 ): number => {
   const n = MONTHS_PER_YEAR * amortizationPeriod;
-  const i = anualInterestRate / HUNDRED_PERCENTAGE / MONTHS_PER_YEAR;
+  const i = annualInterestRate / HUNDRED_PERCENTAGE / MONTHS_PER_YEAR;
   const p =
     propertyPrice * (1 - downPayment / HUNDRED_PERCENTAGE) + insuranceAmount;
 

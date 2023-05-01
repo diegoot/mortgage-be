@@ -11,7 +11,7 @@ describe("tests for /mortgage", () => {
           .query({
             propertyPrice: 400000,
             downPayment: 20,
-            anualInterestRate: 5,
+            annualInterestRate: 5,
             amortizationPeriod: 25,
           })
           .send();
@@ -22,7 +22,7 @@ describe("tests for /mortgage", () => {
           .query({
             propertyPrice: 400000,
             downPayment: 20,
-            anualInterestRate: 5,
+            annualInterestRate: 5,
             paymentSchedule: "monthly",
           })
           .send();
@@ -37,7 +37,7 @@ describe("tests for /mortgage", () => {
           .query({
             propertyPrice: 400000,
             downPayment: 20,
-            anualInterestRate: 5,
+            annualInterestRate: 5,
             amortizationPeriod: 25,
             paymentSchedule: 22,
           })
@@ -58,7 +58,7 @@ describe("tests for /mortgage", () => {
           .query({
             propertyPrice: 400000,
             downPayment: 15,
-            anualInterestRate: 5,
+            annualInterestRate: 5,
             amortizationPeriod: 25,
             paymentSchedule: "monthly",
           })

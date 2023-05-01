@@ -20,7 +20,7 @@ export default (req: Request, res: Response) => {
   const {
     propertyPrice,
     downPayment,
-    anualInterestRate,
+    annualInterestRate,
     amortizationPeriod,
     paymentSchedule,
   } = matchedData(req);
@@ -30,7 +30,7 @@ export default (req: Request, res: Response) => {
     propertyPrice,
     insuranceAmount,
     downPayment,
-    anualInterestRate,
+    annualInterestRate,
     amortizationPeriod
   );
   const mortgagePayment = getMortgagePayment(

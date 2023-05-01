@@ -3,8 +3,8 @@ import { PaymentSchedule } from "./constants";
 const maxPropertyPrice = 499999.99;
 const minDownPayment = 5;
 const maxDownPayment = 100;
-const minAnualInterestRate = 0;
-const maxAnualInterestRate = 100;
+const minAnnualInterestRate = 0;
+const maxAnnualInterestRate = 100;
 const validAmortizationPeriods = [5, 10, 15, 20, 25, 30];
 
 export default {
@@ -28,13 +28,13 @@ export default {
     },
     toFloat: true,
   },
-  anualInterestRate: {
+  annualInterestRate: {
     notEmpty: {
-      errorMessage: "anualInterestRate cannot be empty",
+      errorMessage: "annualInterestRate cannot be empty",
     },
     isFloat: {
-      options: { min: minAnualInterestRate, max: maxAnualInterestRate },
-      errorMessage: `anualInterestRate must be a number between ${minAnualInterestRate} and ${maxAnualInterestRate}`,
+      options: { min: minAnnualInterestRate, max: maxAnnualInterestRate },
+      errorMessage: `annualInterestRate must be a number between ${minAnnualInterestRate} and ${maxAnnualInterestRate}`,
     },
     toFloat: true,
   },
